@@ -1,0 +1,189 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home section */
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.logo img{
+    margin: 5px;
+    height: 3rem;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+}
+.list li{
+    list-style-type: none;
+}
+.list li a{
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+.list a:hover{
+    border-radius: 20px;
+    background-color: black;
+}
+
+/* home seection design */
+#home{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url("https://drive.google.com/uc?id=1umtAXGLJoHF_N2scdX114AOc91I1KO1m") no-repeat center center/cover;
+    height: 382px;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.9;
+}
+
+/* services section  */
+#Service-container{
+    /* background-color: rgb(164, 172, 201); */
+    background-color: rgb(158, 156, 156);
+}
+#Service{
+    display: flex;
+}
+.img1{
+    border: 2px solid rgb(255, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.img1 img{
+    height: 195px;
+    width: 100%;
+}
+
+/* clints Section  */
+#clints{
+    position: relative;
+    left: 0;
+    /* border: 2px solid red; */
+    display: block;
+    height: 300px;
+}
+#clints::before{
+    content: "";
+    background: url("https://drive.google.com/uc?id=1g5w_VPhAwW6hJ_3fuUvUB6QHvtwbEYE0") no-repeat center center/cover;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.5;
+    /* border-radius: 15px; */
+}
+.clint-Img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clint-logo{
+    height: 50px;
+    margin: 50px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("ContactBg.jpg") no-repeat center center/cover;
+    left: 0;
+    width: 100%;
+    height: 225px;
+    z-index: -1;
+    opacity: 0.5;
+    /* border-radius: 15px; */
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* utlity classs */
+.h-primary{
+    color: rgb(8, 8, 8);
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px;
+}
+.p-paragraph{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    text-align: center;   
+}
+.b-primary{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.b-primary:hover{
+    background-color: green;
+}
+
+
+@media only screen and (max-width:500px){
+    .logo img{
+        margin: 2px;
+        height: 2rem;
+    }
+    .list{
+        display: flex;
+        justify-content: center;
+        margin: 0px 5px;
+    }
+    .list li a{
+        padding: 10px;
+    }
+
+    #Service{
+        flex-direction: column;
+    }
+
+    .clint-logo{
+        height: 30px;
+        margin: 20px;
+    }
+
+}
